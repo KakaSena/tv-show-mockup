@@ -7,7 +7,7 @@ export const fetchShow = async (showId) => {
 
   return response.data;
 };
-console.log(fetchShow);
+
 export const fetchEpisodes = async (showId) => {
   const response = await axios.get(`${API_BASE_URL}/episodes/${showId}.json`);
   return response.data;

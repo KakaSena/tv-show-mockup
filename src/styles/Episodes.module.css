@@ -1,0 +1,16 @@
+.episodeList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.episode {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.episode:hover {
+  background-color: #f9f9f9;
+}
