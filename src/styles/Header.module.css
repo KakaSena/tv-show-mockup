@@ -1,0 +1,45 @@
+/* src/components/Header/Header.module.css */
+
+.header {
+  position: relative; /* Required for positioning the text over the background */
+  min-height: 200px; /* Set a minimum height for the header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover; /* Ensure the background image covers the entire header */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  overflow: hidden; /* Ensure the background image doesn't overflow the header */
+}
+
+/* Overlay to improve text readability */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Place the overlay above the background image but below the text */
+}
+
+/* Container for the text content */
+.headerContent {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay and background image */
+  text-align: center;
+  color: white; /* Ensure text is readable */
+  padding: 20px;
+}
+
+.headerContent h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 10px; /* Add some space between the title and the genres/year */
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  margin: 0;
+}

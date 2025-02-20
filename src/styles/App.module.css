@@ -1,0 +1,17 @@
+/* src/App.module.css */
+.app {
+  padding: var(--spacing-large);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+}
