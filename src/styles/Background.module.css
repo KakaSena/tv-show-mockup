@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.headerContent {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Add a semi-transparent background for better readability */
+  padding: 10px;
+  border-radius: 5px;
+}
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.genres {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.year {
+  font-size: 1rem;
+  margin: 0;
+}
