@@ -46,7 +46,7 @@ const Footer = ({ onCastClick }) => {
       {/* Elenco Button and Content */}
       <div className={styles.footerSection}>
         <button onClick={toggleCast} className={styles.footerButton}>
-          ELENCO
+          CAST
         </button>
         {showCast && (
           <div className={`${styles.content} ${fadeOut ? styles.fadeOut : ""}`}>
