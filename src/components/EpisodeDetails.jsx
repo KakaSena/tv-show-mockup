@@ -15,7 +15,7 @@ const EpisodeDetails = ({ episode }) => {
         />
       )}
       <h2>{episode.Title}</h2>
-      <p>{episode.Synopsis}</p>
+      <p>{episode.Synopsis} </p>
       <p>Duration: {episode.Duration} minutes</p>
     </div>
   );

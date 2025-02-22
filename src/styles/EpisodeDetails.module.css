@@ -1,6 +1,16 @@
 .episodeDetails {
+  background-color: #fff;
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.episodeDetails h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.episodeDetails p {
+  margin: 10px 0;
+  color: #666;
 }
