@@ -6,32 +6,32 @@
 
 .seasonsSlider {
   display: flex;
-  gap: 10px; /* Space between buttons */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  padding: 10px 0; /* Add some padding */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none;
 }
 
 .seasonButton {
-  flex: 0 0 auto; /* Prevent buttons from shrinking */
+  flex: 0 0 auto;
   padding: 10px 20px;
-  border: 2px solid #ccc; /* Default border color */
-  border-radius: 20px; /* Rounded corners */
+  border: 2px solid #ccc;
+  border-radius: 20px;
   background-color: transparent;
-  color: #333; /* Default text color */
+  color: #333;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+  transition: all 0.3s ease;
 }
 
 .seasonButton:hover {
-  border-color: #666; /* Darker border on hover */
-  color: #666; /* Darker text on hover */
+  border-color: #666;
+  color: #666;
 }
 
 .seasonButton.active {
-  border-color: #007bff; /* Blue border for active season */
-  background-color: #007bff; /* Blue background for active season */
-  color: #fff; /* White text for active season */
+  border-color: #007bff;
+  background-color: #007bff;
+  color: #fff;
 }

@@ -26,37 +26,35 @@
   text-align: center;
 }
 
-/* Text Row */
 .textRow {
   display: flex;
   justify-content: space-around;
-  gap: 20px; /* Space between text items */
-  margin-bottom: 10px; /* Space between text and icons */
+  gap: 20px;
+  margin-bottom: 10px;
 }
 
 .textRow span {
   font-size: 0.9rem;
-  font-weight: 400; /* Regular for text */
+  font-weight: 400;
   color: #ccc;
 }
 
-/* Icon Row */
 .iconRow {
   display: flex;
   justify-content: space-around;
-  gap: 20px; /* Space between icons */
+  gap: 20px;
 }
 
 .icon {
   font-size: 1.5rem;
   cursor: pointer;
-  transition: transform 0.2s ease; /* Smooth hover effect */
+  transition: transform 0.2s ease;
 }
 
 .icon:hover {
-  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  transform: scale(1.1);
 }
 
 .icon:hover {
-  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  transform: scale(1.1);
 }

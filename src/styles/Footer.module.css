@@ -1,15 +1,14 @@
-/* src/components/Footer/Footer.module.css */
 .footer {
-  position: fixed; /* Fix the footer at the bottom */
-  bottom: 0; /* Position at the bottom */
-  left: 0; /* Align to the left */
-  width: 100%; /* Span the entire width */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 20px;
   background-color: #333;
   color: white;
-  z-index: 3; /* Ensure it stays above the right panel */
+  z-index: 3;
 }
 
 .footerSection {
