@@ -5,12 +5,43 @@
 }
 
 .episode {
-  padding: 10px;
-  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .episode:hover {
-  background-color: #f9f9f9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.episode h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.episode p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.episodeContent {
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right */
+  align-items: center; /* Vertically center items */
+}
+
+.episodeDetails {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee; /* Separator between title and details */
+}
+
+.episodeDetails p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
 }
