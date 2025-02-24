@@ -1,5 +1,5 @@
 .episodeDetails {
-  background-color: #fff;
+  background: transparent;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -8,9 +8,12 @@
 .episodeDetails h2 {
   margin: 0;
   font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 .episodeDetails p {
   margin: 10px 0;
-  color: #666;
+  font-weight: bold;
+  color: white;
 }

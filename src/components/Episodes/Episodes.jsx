@@ -34,6 +34,7 @@ const Episodes = ({ episodes, onSelectEpisode }) => {
           {selectedEpisode?.ID === episode.ID && (
             <EpisodeDetails episode={selectedEpisode} />
           )}
+          <hr />
         </div>
       ))}
     </div>

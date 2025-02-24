@@ -7,13 +7,7 @@ const EpisodeDetails = ({ episode }) => {
 
   return (
     <div className={styles.episodeDetails}>
-      {episode.Image && (
-        <img
-          src={episode.Image}
-          alt={episode.Title}
-          className={styles.episodeImage}
-        />
-      )}
+      {episode.Image && <img src={episode.Image} alt={episode.Title} />}
       <h2>{episode.Title}</h2>
       <p>{episode.Synopsis} </p>
       <p>Duration: {episode.Duration} minutes</p>

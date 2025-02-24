@@ -6,7 +6,7 @@ import Episodes from "./components/Episodes/Episodes";
 import Footer from "./components/Footer/Footer";
 import Loading from "./components/Loading";
 import styles from "./styles/App.module.css";
-import Cast from "./components/Cast";
+import Cast from "./components/Cast/Cast";
 
 function App() {
   const [show, setShow] = useState(null);
@@ -15,7 +15,6 @@ function App() {
   const [seasons, setSeasons] = useState([]);
   const [selectedSeason, setSelectedSeason] = useState(null);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
-  const [showCast, setShowCast] = useState(false);
 
   const showId = process.env.REACT_APP_SHOW_ID;
 
@@ -66,14 +65,6 @@ function App() {
     setSelectedEpisode(episode);
   };
 
-  const handleCastClick = () => {
-    setShowCast(true);
-  };
-
-  const handleCloseCast = () => {
-    setShowCast(false);
-  };
-
   const filteredEpisodes = episodes.filter(
     (episode) => `T${episode.SeasonNumber}` === selectedSeason
   );
@@ -106,7 +97,7 @@ function App() {
         </div>
       </div>
 
-      <Footer onCastClick={handleCastClick} />
+      <Footer cast={show.Cast} />
     </div>
   );
 }

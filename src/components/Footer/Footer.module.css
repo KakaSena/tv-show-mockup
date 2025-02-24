@@ -37,3 +37,9 @@
   color: #fff;
   cursor: pointer;
 }
+
+.footerButton {
+  border: 0;
+  background: none;
+  font-family: "Nunito", sans-serif;
+}

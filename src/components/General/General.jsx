@@ -1,49 +1,27 @@
 import React from "react";
 import styles from "./General.module.css";
 
-const Icon1 = () => <span>📞</span>; // Example: Phone icon
-const Icon2 = () => <span>📧</span>; // Example: Email icon
-const Icon3 = () => <span>🔒</span>; // Example: Lock icon
+const Icon1 = () => <span>╋</span>;
+const Icon2 = () => <span>🔴</span>;
+const Icon3 = () => <span>🔒</span>;
 
 const General = () => {
-  const handleIconClick = (iconName) => {
-    console.log(`${iconName} icon clicked`); // Placeholder for icon click functionality
-  };
-
   return (
     <div className={styles.generalContent}>
       <div className={styles.buttonContainer}>
-        {/* Button 1 */}
-        <div className={styles.button}>
-          <span>About Us</span>
-          <div
-            className={styles.icon}
-            onClick={() => handleIconClick("About Us")}
-          >
-            <Icon1 />
-          </div>
+        <span>Minha Lista</span>
+        <div className={styles.icon}>
+          <Icon1 />
         </div>
 
-        {/* Button 2 */}
-        <div className={styles.button}>
-          <span>Contact</span>
-          <div
-            className={styles.icon}
-            onClick={() => handleIconClick("Contact")}
-          >
-            <Icon2 />
-          </div>
+        <span>Gravar</span>
+        <div className={styles.icon}>
+          <Icon2 />
         </div>
 
-        {/* Button 3 */}
-        <div className={styles.button}>
-          <span>Privacy Policy</span>
-          <div
-            className={styles.icon}
-            onClick={() => handleIconClick("Privacy Policy")}
-          >
-            <Icon3 />
-          </div>
+        <span>Compartilhar</span>
+        <div className={styles.icon}>
+          <Icon3 />
         </div>
       </div>
     </div>

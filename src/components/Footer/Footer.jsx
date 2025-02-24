@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Footer.module.css";
 import General from "../General/General";
-import Cast from "../Cast";
+import Cast from "../Cast/Cast";
 
-const Footer = ({ onCastClick }) => {
+const Footer = ({ cast }) => {
   const [showGeneral, setShowGeneral] = useState(true);
   const [showCast, setShowCast] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
@@ -34,7 +34,7 @@ const Footer = ({ onCastClick }) => {
     <footer className={styles.footer}>
       <div className={styles.footerSection}>
         <button onClick={toggleGeneral} className={styles.footerButton}>
-          GENERAL
+          GERAL
         </button>
         {showGeneral && (
           <div className={`${styles.content} ${fadeOut ? styles.fadeOut : ""}`}>
@@ -45,12 +45,22 @@ const Footer = ({ onCastClick }) => {
 
       <div className={styles.footerSection}>
         <button onClick={toggleCast} className={styles.footerButton}>
-          CAST
+          ELENCO
         </button>
         {showCast && (
           <div className={`${styles.content} ${fadeOut ? styles.fadeOut : ""}`}>
-            <Cast onCastClick={onCastClick} />
+            <Cast cast={cast} />
           </div>
+        )}
+      </div>
+      <div className={styles.footerSection}>
+        <button onClick={toggleGeneral} className={styles.footerButton}>
+          PRINCIPAIS PREMIOS
+        </button>
+        {showGeneral && (
+          <div
+            className={`${styles.content} ${fadeOut ? styles.fadeOut : ""}`}
+          ></div>
         )}
       </div>
     </footer>
