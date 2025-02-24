@@ -51,9 +51,9 @@ tv-show-mockup/
 
   ## Installation 🛠️
 
-      Prerequisites
-          Node.js (v16 or higher)
-          npm (v8 or higher)
+  Prerequisites
+  Node.js (v16 or higher)
+  npm (v8 or higher)
 
   To configure and execute the project locally, follow the steps below:
 
@@ -77,6 +77,10 @@ tv-show-mockup/
    ```
 
    The application will be available at `http://localhost:3000`.
+
+## Vercel
+
+I deployed the project using Versel and it is available at https://tv-show-mockup.vercel.app/
 
 ## License
 
