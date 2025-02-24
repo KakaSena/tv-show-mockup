@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styles from "../styles/Episodes.module.css";
-import EpisodeDetails from "./EpisodeDetails";
+import styles from "./Episodes.module.css";
+import EpisodeDetails from "../EpisodeDetails/EpisodeDetails";
 
 const Episodes = ({ episodes, onSelectEpisode }) => {
   const [selectedEpisode, setSelectedEpisode] = useState(null);

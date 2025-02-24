@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "../styles/EpisodeDetails.module.css";
+import styles from "./EpisodeDetails.module.css";
 
 const EpisodeDetails = ({ episode }) => {
   if (!episode) return null;

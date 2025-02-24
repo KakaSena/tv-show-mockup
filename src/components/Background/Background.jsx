@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "../styles/Background.module.css";
+import styles from "./Background.module.css";
 
 const Background = ({ title, genres, year, image }) => {
   const Genres = genres.map((genre) => genre.Title).join(", ");

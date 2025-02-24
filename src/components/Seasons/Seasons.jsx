@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Seasons.module.css";
+import styles from "./Seasons.module.css";
 
 const Seasons = ({ seasons, selectedSeason, onSelectSeason }) => {
   return (
@@ -12,7 +12,7 @@ const Seasons = ({ seasons, selectedSeason, onSelectSeason }) => {
           }`}
           onClick={() => onSelectSeason(season)}
         >
-          {season.replace("T", "Season ")}
+          {season.replace("T", "Season ")} a
         </button>
       ))}
     </div>

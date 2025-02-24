@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/General.module.css";
+import styles from "./General.module.css";
 
 const Icon1 = () => <span>📞</span>; // Example: Phone icon
 const Icon2 = () => <span>📧</span>; // Example: Email icon

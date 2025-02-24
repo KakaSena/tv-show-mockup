@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "../styles/Footer.module.css";
-import General from "./General";
-import Cast from "./Cast";
+import styles from "./Footer.module.css";
+import General from "../General/General";
+import Cast from "../Cast";
 
 const Footer = ({ onCastClick }) => {
   const [showGeneral, setShowGeneral] = useState(true);
@@ -10,23 +10,23 @@ const Footer = ({ onCastClick }) => {
 
   const toggleGeneral = () => {
     if (showCast) {
-      setFadeOut(true); // Start fade-out effect
+      setFadeOut(true);
       setTimeout(() => {
         setShowCast(false);
         setShowGeneral(true);
-        setFadeOut(false); // Reset fade-out effect
-      }, 300); // Match the duration of the CSS transition
+        setFadeOut(false);
+      }, 300);
     }
   };
 
   const toggleCast = () => {
     if (showGeneral) {
-      setFadeOut(true); // Start fade-out effect
+      setFadeOut(true);
       setTimeout(() => {
         setShowGeneral(false);
         setShowCast(true);
-        setFadeOut(false); // Reset fade-out effect
-      }, 300); // Match the duration of the CSS transition
+        setFadeOut(false);
+      }, 300);
     }
   };
 
@@ -43,7 +43,6 @@ const Footer = ({ onCastClick }) => {
         )}
       </div>
 
-      {/* Elenco Button and Content */}
       <div className={styles.footerSection}>
         <button onClick={toggleCast} className={styles.footerButton}>
           CAST

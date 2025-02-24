@@ -24,37 +24,11 @@
   right: 0;
   width: 30%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  background-color: transparent;
   padding: 20px;
   overflow-y: auto;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
-}
-.rightPanel::-webkit-scrollbar {
-  width: 8px;
-}
-
-.rightPanel::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-}
-
-.rightPanel::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
-
-.rightPanel::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.seasonsContainer {
-  margin-bottom: 20px;
-}
-
-.episodesContainer {
-  margin-top: 20px;
 }
 
 .episodeList {
