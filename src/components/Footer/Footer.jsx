@@ -54,9 +54,7 @@ const Footer = ({ cast, show }) => {
         )}
       </div>
       <div className={styles.footerSection}>
-        <button onClick={toggleGeneral} className={styles.footerButton}>
-          PRINCIPAIS PREMIOS
-        </button>
+        <button className={styles.footerButton}>PRINCIPAIS PREMIOS</button>
         {showGeneral && (
           <div
             className={`${styles.content} ${fadeOut ? styles.fadeOut : ""}`}
