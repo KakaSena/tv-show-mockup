@@ -12,7 +12,7 @@ const Seasons = ({ seasons, selectedSeason, onSelectSeason }) => {
           }`}
           onClick={() => onSelectSeason(season)}
         >
-          {season.replace("T", "Season ")} a
+          {season.replace("T", "T")}
         </button>
       ))}
     </div>

@@ -1,9 +1,3 @@
-.seasons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .seasonsSlider {
   display: flex;
   gap: 10px;
@@ -15,9 +9,8 @@
 .seasonButton {
   flex: 0 0 auto;
   padding: 10px 20px;
-  border: 2px solid #ccc;
-  border-radius: 20px;
-  background-color: transparent;
+  border: 0;
+  background: none;
   color: #333;
   font-size: 1rem;
   font-weight: 600;
@@ -26,15 +19,13 @@
 }
 
 .seasonButton:hover {
-  border-color: #666;
-  color: #666;
+  border-color: #ffffff;
+  color: white;
 }
 
 .seasonButton.active {
   border-color: #007bff;
   background-color: #007bff;
-  color: #fff;
-}
-.seasonsContainer {
-  margin-bottom: 20px;
+  color: black;
+  background: none;
 }
