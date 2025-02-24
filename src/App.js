@@ -97,7 +97,7 @@ function App() {
         </div>
       </div>
 
-      <Footer cast={show.Cast} />
+      <Footer cast={show.Cast} show={show} />
     </div>
   );
 }

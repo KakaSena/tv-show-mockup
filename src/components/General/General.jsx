@@ -1,29 +1,45 @@
 import React from "react";
 import styles from "./General.module.css";
 
-const Icon1 = () => <span>╋</span>;
-const Icon2 = () => <span>🔴</span>;
-const Icon3 = () => <span>🔒</span>;
-
-const General = () => {
+const General = ({ show }) => {
   return (
     <div className={styles.generalContent}>
-      <div className={styles.buttonContainer}>
-        <span>Minha Lista</span>
-        <div className={styles.icon}>
-          <Icon1 />
+      <div className={styles.iconContainer}>
+        <div className={styles.iconItem}>
+          <div className={styles.icon}>
+            <span>╋</span>
+          </div>
+          <span>Minha Lista</span>
         </div>
 
-        <span>Gravar</span>
-        <div className={styles.icon}>
-          <Icon2 />
+        <div className={styles.iconItem}>
+          <div className={styles.icon}>
+            <span>📈</span>
+          </div>
+          <span>Avaliar</span>
         </div>
 
-        <span>Compartilhar</span>
-        <div className={styles.icon}>
-          <Icon3 />
+        <div className={styles.iconItem}>
+          <div className={styles.icon}>
+            <span>🔴</span>
+          </div>
+          <span>Gravar</span>
+        </div>
+
+        <div className={styles.iconItem}>
+          <div className={styles.icon}>
+            <span>🔒</span>
+          </div>
+          <span>Compartilhar</span>
         </div>
       </div>
+
+      {show?.Synopsis && (
+        <div className={styles.synopsis}>
+          <h3>Sinopse</h3>
+          <p>{show.Synopsis}</p>
+        </div>
+      )}
     </div>
   );
 };

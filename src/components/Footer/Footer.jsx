@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 import General from "../General/General";
 import Cast from "../Cast/Cast";
 
-const Footer = ({ cast }) => {
+const Footer = ({ cast, show }) => {
   const [showGeneral, setShowGeneral] = useState(true);
   const [showCast, setShowCast] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
@@ -38,7 +38,7 @@ const Footer = ({ cast }) => {
         </button>
         {showGeneral && (
           <div className={`${styles.content} ${fadeOut ? styles.fadeOut : ""}`}>
-            <General />
+            <General show={show} />
           </div>
         )}
       </div>
