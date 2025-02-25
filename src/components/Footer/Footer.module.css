@@ -74,11 +74,11 @@
 }
 
 .footerItem:hover {
-  color: #ffcc00;
+  color: white;
 }
 
 .footerItem.active {
-  color: #ffcc00;
+  color: white;
   font-weight: bold;
 }
 
@@ -86,7 +86,7 @@
   position: absolute;
   bottom: -5px;
   height: 2px;
-  background-color: #ffcc00;
+  background-color: green;
   transition: left 0.3s ease, width 0.3s ease;
 }
 
