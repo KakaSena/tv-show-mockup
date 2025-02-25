@@ -49,7 +49,7 @@ Episodes.defaultProps = {
       Synopsis: "No synopsis available.",
     },
   ],
-  onSelectEpisode: () => {}, // Default to a no-op function if no handler is provided
+  onSelectEpisode: () => {},
 };
 
 Episodes.propTypes = {

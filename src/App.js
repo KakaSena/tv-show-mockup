@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { fetchShow, fetchEpisodes } from "./services/apiService";
+import React from "react";
 import Background from "./components/Background/Background";
 import Seasons from "./components/Seasons/Seasons";
 import Episodes from "./components/Episodes/Episodes";
