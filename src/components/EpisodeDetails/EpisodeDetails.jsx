@@ -11,7 +11,7 @@ const EpisodeDetails = ({ episode }) => {
       <h2>{episode?.Title || "Título não disponível"}</h2>
       <p>{episode?.Synopsis || "Nenhuma sinopse disponível."}</p>
       <p>
-        Duration:{" "}
+        Duração:{" "}
         {episode?.Duration
           ? `${episode.Duration} minutes`
           : "Duração não especificada."}
