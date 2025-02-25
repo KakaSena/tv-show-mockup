@@ -5,19 +5,16 @@ import styles from "./Background.module.css";
 const Background = ({ title, genres, year, image }) => {
   const Genres = genres.map((genre) => genre.Title).join(", ");
 
-  const backgroundImg = {
-    backgroundImage: image ? `url(${image})` : "none",
-  };
-
   return (
-    <div className={styles.fade}>
-      <div className={styles.header} style={backgroundImg}>
-        <div className={styles.headerContent}>
-          <h1>{title}</h1>
-          <p>
-            {Genres} | {year}
-          </p>
-        </div>
+    <div
+      className={styles.backgroundWrapper}
+      style={{ "--background-img": `url(${image})` }}
+    >
+      <div className={styles.overlay}>
+        <h1>{title}</h1>
+        <p>
+          {genres.map((genre) => genre.Title).join(", ")} | {year}
+        </p>
       </div>
     </div>
   );
