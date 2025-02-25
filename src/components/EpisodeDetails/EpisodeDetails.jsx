@@ -8,18 +8,23 @@ const EpisodeDetails = ({ episode }) => {
   return (
     <div className={styles.episodeDetails}>
       {episode.Image && <img src={episode.Image} alt={episode.Title} />}
-      <h2>{episode.Title}</h2>
-      <p>{episode.Synopsis} </p>
-      <p>Duration: {episode.Duration} minutes</p>
+      <h2>{episode?.Title || "Título não disponível"}</h2>
+      <p>{episode?.Synopsis || "Nenhuma sinopse disponível."}</p>
+      <p>
+        Duration:{" "}
+        {episode?.Duration
+          ? `${episode.Duration} minutes`
+          : "Duração não especificada."}
+      </p>
     </div>
   );
 };
 
 EpisodeDetails.defaultProps = {
   episode: {
-    Title: "No Title Available",
-    Synopsis: "No synopsis available.",
-    Duration: "Duration not specified",
+    Title: "",
+    Synopsis: "",
+    Duration: "",
     Image: "",
   },
 };
