@@ -10,12 +10,14 @@ const Background = ({ title, genres, year, image }) => {
   };
 
   return (
-    <div className={styles.header} style={backgroundImg}>
-      <div className={styles.headerContent}>
-        <h1>{title}</h1>
-        <p>
-          {Genres} | {year}
-        </p>
+    <div className={styles.fade}>
+      <div className={styles.header} style={backgroundImg}>
+        <div className={styles.headerContent}>
+          <h1>{title}</h1>
+          <p>
+            {Genres} | {year}
+          </p>
+        </div>
       </div>
     </div>
   );

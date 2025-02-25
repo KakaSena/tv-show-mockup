@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -7,6 +12,20 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.fade {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 70%
+  );
 }
 
 .headerContent {

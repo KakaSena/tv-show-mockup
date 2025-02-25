@@ -14,7 +14,7 @@ function App() {
   const [episodes, setEpisodes] = useState([]);
   const [seasons, setSeasons] = useState([]);
   const [selectedSeason, setSelectedSeason] = useState(null);
-  const [setSelectedEpisode] = useState(null);
+  const [selectedEpisode, setSelectedEpisode] = useState(null);
 
   const showId = process.env.REACT_APP_SHOW_ID;
 
