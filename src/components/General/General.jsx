@@ -1,37 +1,25 @@
 import React from "react";
 import styles from "./General.module.css";
+import PropTypes from "prop-types";
 
 const General = ({ show }) => {
+  const iconItems = [
+    { icon: "╋", label: "Minha Lista" },
+    { icon: "📈", label: "Avaliar" },
+    { icon: "🔴", label: "Gravar" },
+    { icon: "🔒", label: "Compartilhar" },
+  ];
   return (
     <div className={styles.generalContent}>
       <div className={styles.iconContainer}>
-        <div className={styles.iconItem}>
-          <div className={styles.icon}>
-            <span>╋</span>
+        {iconItems.map((item, index) => (
+          <div key={index} className={styles.iconItem}>
+            <div className={styles.icon} aria-label={item.label}>
+              <span>{item.icon}</span>
+            </div>
+            <span>{item.label}</span>
           </div>
-          <span>Minha Lista</span>
-        </div>
-
-        <div className={styles.iconItem}>
-          <div className={styles.icon}>
-            <span>📈</span>
-          </div>
-          <span>Avaliar</span>
-        </div>
-
-        <div className={styles.iconItem}>
-          <div className={styles.icon}>
-            <span>🔴</span>
-          </div>
-          <span>Gravar</span>
-        </div>
-
-        <div className={styles.iconItem}>
-          <div className={styles.icon}>
-            <span>🔒</span>
-          </div>
-          <span>Compartilhar</span>
-        </div>
+        ))}
       </div>
 
       {show?.Synopsis && (
@@ -42,6 +30,12 @@ const General = ({ show }) => {
       )}
     </div>
   );
+};
+
+General.propTypes = {
+  show: PropTypes.shape({
+    Synopsis: PropTypes.string,
+  }),
 };
 
 export default General;
