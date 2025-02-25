@@ -4,9 +4,9 @@ import Background from "./components/Background/Background";
 import Seasons from "./components/Seasons/Seasons";
 import Episodes from "./components/Episodes/Episodes";
 import Footer from "./components/Footer/Footer";
-import Loading from "./components/Loading";
 import styles from "./styles/App.module.css";
 import Cast from "./components/Cast/Cast";
+import Loading from "./components/Loading/Loading";
 
 function App() {
   const [show, setShow] = useState(null);
@@ -14,7 +14,7 @@ function App() {
   const [episodes, setEpisodes] = useState([]);
   const [seasons, setSeasons] = useState([]);
   const [selectedSeason, setSelectedSeason] = useState(null);
-  const [selectedEpisode, setSelectedEpisode] = useState(null);
+  const [setSelectedEpisode] = useState(null);
 
   const showId = process.env.REACT_APP_SHOW_ID;
 
@@ -48,12 +48,12 @@ function App() {
     fetchData();
   }, [showId]);
 
-  if (!show) {
-    return <Loading />;
-  }
-
   if (error) {
     return <div>Error: {error.message}</div>;
+  }
+
+  if (!show) {
+    return <Loading />;
   }
 
   const handleSelectSeason = (season) => {
