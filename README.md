@@ -22,6 +22,7 @@ tv-show-mockup/
 │   │   ├── Footer/
 │   │   ├── General/
 │   │   └── Seasons/
+│   ├── config/
 │   ├── hooks/
 │   ├── services/
 │   ├── App.js
@@ -42,7 +43,8 @@ tv-show-mockup/
     - `Footer/`: Component responsible for displaying the footer.
     - `General/`: Component responsible for displaying the general information.
     - `Seasons/`: Component responsible for displaying the seasons.
-  - `hooks/`: Contains custom hooks, including PokéAPI calls.
+  - `config/`: Contains configs files to better reusability.
+  - `hooks/`: Contains custom hooks.
   - `services/`: Contains services for interacting with external APIs.
   - `App.tsx`: Application root component.
 - Configuration files:
